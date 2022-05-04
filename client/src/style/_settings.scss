@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Poppins:wght@300;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+$color_fonts: #F5EDF0;
+$color_bg_reliefs: #231F33;
+$color_posts: #1C1922;
+$color_inputs: #726D82;
+$color_dynamic: #623E84;
+$shadow: 0 3px 20px rgba(0, 0, 0, 0.356);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: $color_bg_reliefs;
+  color: $color_fonts;
+}
+
+button,
+input[type="submit"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  background: $color_dynamic;
+  transition: 0.2s;
+
+  &:hover {
+    filter: brightness(80%);
+    transform: translateX(2px);
+  }
+}
+
+input,
+textarea {
+  border-radius: 7px;
+  border: none;
+  resize: none;
+  margin: 5px;
+  padding: 8px;
+  background: $color_inputs;
+}
