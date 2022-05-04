@@ -1,7 +1,12 @@
+import ConnectModal from "./components/ConnectModal";
+
 function App() {
   return (
     <div>
-        <h1>Hello World</h1>
+        <div className="app-header">
+            <ConnectModal />
+        </div>
+        <div className="posts-container"></div>
     </div>
   );
 }
